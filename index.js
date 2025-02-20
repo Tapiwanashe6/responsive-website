@@ -1,4 +1,4 @@
-// Select the main centre div and navigation links
+// Selecting the main centre div and navigation links
 const centreDiv = document.querySelector(`.centre`);
 const education = document.querySelector(`.education`);
 const about = document.querySelector(`.about`);
