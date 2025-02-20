@@ -1,8 +1,12 @@
+// Select the main centre div and navigation links
 const centreDiv = document.querySelector(`.centre`);
 const education = document.querySelector(`.education`);
 const about = document.querySelector(`.about`);
+
+// Event listener for the "About" link
 about.onclick = () => {
-  centreDiv.innerHTML= `
+  // Update the centre div with "About Me" content
+  centreDiv.innerHTML = `
   <div class="centre">
       <div class="upper-part">
         <h1 class="centre-h1">ABOUT ME</h1>
@@ -15,6 +19,7 @@ about.onclick = () => {
         <p>Earned a certification in UI/UX Design, focusing on creating intuitive and visually appealing user interfaces. Gained hands-on experience with design tools, user research, wireframing, and prototyping.</p>
       </div>
       <div class="lower-part">
+        <!-- Displaying soft skills with progress bars -->
         <p>Teamwork</p>
         <div class="bar">
           <div class="bar1"></div>
@@ -25,7 +30,7 @@ about.onclick = () => {
           <div class="bar1"></div>
           <div class="bar2"></div>  
         </div>
-        <p>Critcal Thinking</p>
+        <p>Critical Thinking</p>
         <div class="bar">
           <div class="bar1"></div>
           <div class="bar2"></div>  
@@ -35,7 +40,7 @@ about.onclick = () => {
           <div class="bar1"></div>
           <div class="bar2"></div>  
         </div>
-        <p>Team management</p>
+        <p>Team Management</p>
         <div class="bar">
           <div class="bar1"></div>
           <div class="bar2"></div>  
@@ -43,13 +48,15 @@ about.onclick = () => {
       </div>
       <div class="centre-footer">
         <div class="centre-footer_p">
-          <p>Full-Stack Eningineer</p>
+          <p>Full-Stack Engineer</p>
           <p class="work">Open For Work</p>
         </div>
       </div>
     </div>
   `;
-document.querySelector('.left-side').innerHTML = `
+  
+  // Update the left sidebar
+  document.querySelector('.left-side').innerHTML = `
   <div class="left-side font-styles">
       <div class="left-upper">
         <p class="left-upper_logo">CV</p>
@@ -62,15 +69,17 @@ document.querySelector('.left-side').innerHTML = `
       </div>
       <div class="left-footer"></div>
     </div>
-`;
-document.querySelector(`.right-side`).innerHTML = `
+  `;
+  
+  // Update the right sidebar
+  document.querySelector(`.right-side`).innerHTML = `
   <div class="right-side">
       <div class="right-upper">
         <img src="WhatsApp Image 2024-09-02 at 1.48.42 AM.jpeg" alt="cv photo" class="cv-photo">
       </div>
       <div class="right-middle">
         <h1 class="right-h2">Tapiwanashe</h1>
-        <h1 class="right-h2"> Marufu</h1>
+        <h1 class="right-h2">Marufu</h1>
         <p>Full Stack Developer</p>
       </div>
       <div class="right-lower">
@@ -80,7 +89,7 @@ document.querySelector(`.right-side`).innerHTML = `
           <div class="bar1r"></div>
           <div class="bar2r"></div>  
         </div>
-        <p>Adobe Indesign</p>
+        <p>Adobe InDesign</p>
         <div class="barr">
           <div class="bar1r"></div>
           <div class="bar2r"></div>  
@@ -97,12 +106,13 @@ document.querySelector(`.right-side`).innerHTML = `
         </div>
       </div>
     </div>
-  </div>
-`;
+  `;
 }
+
+// Event listener for the "Education" link
 education.onclick = () => {
-  centreDiv.innerHTML= `
-  
+  // Update the centre div with "Education" content
+  centreDiv.innerHTML = `
   <section id="education" class="section">
     <h2>Education</h2>
   
@@ -137,14 +147,18 @@ education.onclick = () => {
   </section>  
   `;
 
-document.querySelector('.left-side').innerHTML = ``;
-document.querySelector('.right-side').innerHTML = ``;
+  // Clear the left and right side sections
+  document.querySelector('.left-side').innerHTML = ``;
+  document.querySelector('.right-side').innerHTML = ``;
 }
 
+// Select the "Contact" link and the left sidebar
 const contact = document.querySelector(`.contact`);
 const leftSide = document.querySelector(`.left-side`);
 
+// Event listener for the "Contact" link
 contact.onclick = () => {
+  // Update the centre div with the contact form
   centreDiv.innerHTML = `
   <section id="contact" class="section">
     <h2>Contact Me</h2>
@@ -166,13 +180,13 @@ contact.onclick = () => {
   </section>
   `;
 
+  // Handle form submission
   document.getElementById("contactForm").onsubmit = function(event) {
-    event.preventDefault();
-    document.getElementById("responseMessage").innerText = "Message Sent Successfully!";
+    event.preventDefault(); // Prevent default form submission
+    document.getElementById("responseMessage").innerText = "Message Sent Successfully!"; // Display success message
   };
 
+  // Clear the left and right side sections
   document.querySelector('.left-side').innerHTML = ``;
   document.querySelector('.right-side').innerHTML = ``;
-  
 };
-
