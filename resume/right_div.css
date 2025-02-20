@@ -1,0 +1,57 @@
+.right-side {
+  flex: 1;
+  background-color: black; /* Dark Gray */
+  color: white;
+  padding: 20px;
+  height: 100%;
+}
+
+/* Profile Photo */
+.cv-photo {
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+/* Section Titles */
+.right-h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Hard Skills Progress Bars */
+.barr {
+  display: flex;
+  margin-top: 8px;
+}
+
+.bar1r {
+  background-color: white;
+  width: 80%;
+  height: 8px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.bar2r {
+  background-color: yellow;
+  width: 20%;
+  height: 8px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Layout Adjustments */
+.right-middle, .right-lower {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.right-lower{
+  margin-top: 30px;
+}
+.right-middle{
+  margin-top: 50px;
+}
+
